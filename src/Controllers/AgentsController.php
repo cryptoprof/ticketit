@@ -28,12 +28,12 @@ class AgentsController extends Controller
     public function store(Request $request)
     {
     	$rules = [
-            'agents' => 'required|array|min:1',
+//            'agents' => 'required|array|min:1',
         ];
 
-        if(LaravelVersion::min('5.2')){
-        	$rules['agents.*'] = 'integer|exists:users,id';
-        }
+//        if(LaravelVersion::min('5.2')){
+//        	$rules['agents.*'] = 'integer|exists:users,id';
+//        }
 
     	$this->validate($request, $rules);
 
