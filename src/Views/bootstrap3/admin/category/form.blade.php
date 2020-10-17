@@ -11,6 +11,12 @@
     </div>
 </div>
 <div class="form-group">
+    {!! CollectiveForm::label('is_active', trans('ticketit::admin.category-create-is_active') . trans('ticketit::admin.colon'), ['class' => '']) !!}
+    <div class="col-lg-10">
+        {!! CollectiveForm::checkbox('is_active', 1, false) !!}
+    </div>
+</div>
+<div class="form-group">
     <div class="col-lg-10 col-lg-offset-2">
         {!! link_to_route($setting->grab('admin_route').'.category.index', trans('ticketit::admin.btn-back'), null, ['class' => 'btn btn-default']) !!}
         @if(isset($category))

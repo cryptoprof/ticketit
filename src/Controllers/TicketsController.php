@@ -173,7 +173,7 @@ class TicketsController extends Controller
         });
 
         $categories = Cache::remember('ticketit::categories', $time, function () {
-            return Models\Category::all();
+            return Models\Category::active()->get();
         });
 
         $statuses = Cache::remember('ticketit::statuses', $time, function () {

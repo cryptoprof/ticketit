@@ -88,6 +88,7 @@ return [
     'category-create-title'         => 'Criar Nova Categoria',
     'category-create-name'          => 'Nome',
     'category-create-color'         => 'Cor',
+    'category-create-is_active'     => 'Active category',
     'category-edit-title'           => 'Editar Categoria: :name',
 
     // tickets-admin/priority/____

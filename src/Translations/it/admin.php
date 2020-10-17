@@ -103,6 +103,7 @@ return [
   'category-create-title'         => 'Crea nuova Categoria',
   'category-create-name'          => 'Nome',
   'category-create-color'         => 'Colore',
+  'category-create-is_active'     => 'Active category',
   'category-edit-title'           => 'Modifica Categoria: :name',
 
 // tickets-admin/priority/____

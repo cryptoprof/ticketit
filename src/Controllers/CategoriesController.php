@@ -51,7 +51,7 @@ class CategoriesController extends Controller
         ]);
 
         $category = new Category();
-        $category->create(['name' => $request->name, 'color' => $request->color]);
+        $category->create(['name' => $request->name, 'color' => $request->color, 'is_active' => $request->is_active]);
 
         Session::flash('status', trans('ticketit::lang.category-name-has-been-created', ['name' => $request->name]));
 
@@ -102,7 +102,7 @@ class CategoriesController extends Controller
         ]);
 
         $category = Category::findOrFail($id);
-        $category->update(['name' => $request->name, 'color' => $request->color]);
+        $category->update(['name' => $request->name, 'color' => $request->color, 'is_active' => $request->is_active]);
 
         Session::flash('status', trans('ticketit::lang.category-name-has-been-modified', ['name' => $request->name]));
 

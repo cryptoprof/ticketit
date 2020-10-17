@@ -103,6 +103,7 @@ return [
   'category-create-title'         => 'Nieuwe categorie aanmaken',
   'category-create-name'          => 'Naam',
   'category-create-color'         => 'Kleur',
+  'category-create-is_active'     => 'Active category',
   'category-edit-title'           => 'Categorie bewerken: :name',
 
 // tickets-admin/priority/____

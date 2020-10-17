@@ -103,6 +103,7 @@ return [
   'category-create-title'         => 'ایجاد دسته جدید',
   'category-create-name'          => 'نام دسته',
   'category-create-color'         => 'رنگ',
+  'category-create-is_active'     => 'Active category',
   'category-edit-title'           => 'ویرایش دسته: :name',
 
 // tickets-admin/priority/____

@@ -103,6 +103,7 @@ return [
     'category-create-title'        => 'Добавить категорию',
     'category-create-name'         => 'Название',
     'category-create-color'        => 'Цвет',
+    'category-create-is_active'    => 'Активность категории',
     'category-edit-title'          => 'Редактирование категории: :name',
 
 // tickets-admin/priority/____

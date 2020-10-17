@@ -53,13 +53,13 @@
                                                     $agent->id
                                                     ],
                                         ]) !!}
-                        @foreach(\Kordy\Ticketit\Models\Category::all() as $agent_cat)
+                        @foreach(\Kordy\Ticketit\Models\Category::active()->get() as $agent_cat)
                             <input name="agent_cats[]"
                                    type="checkbox"
                                    class="form-check-input"
                                    value="{{ $agent_cat->id }}"
                                    {!! ($agent_cat->agents()->where("id", $agent->id)->count() > 0) ? "checked" : ""  !!}
-                                   > {{ $agent_cat->name }}
+                                   > {{ $agent_cat->name }}<br/>
                         @endforeach
                         {!! CollectiveForm::submit(trans('ticketit::admin.btn-join'), ['class' => 'btn btn-info btn-sm']) !!}
                         {!! CollectiveForm::close() !!}

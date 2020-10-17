@@ -6,6 +6,10 @@
     {!! CollectiveForm::label('color', trans('ticketit::admin.category-create-color') . trans('ticketit::admin.colon'), ['class' => '']) !!}
     {!! CollectiveForm::custom('color', 'color', isset($category->color) ? $category->color : "#000000", ['class' => 'form-control']) !!}
 </div>
+<div class="form-group">
+    {!! CollectiveForm::label('is_active', trans('ticketit::admin.category-create-is_active') . trans('ticketit::admin.colon'), ['class' => '']) !!}
+    {!! CollectiveForm::checkbox('is_active', 1, false) !!}
+</div>
 
 {!! link_to_route($setting->grab('admin_route').'.category.index', trans('ticketit::admin.btn-back'), null, ['class' => 'btn btn-link']) !!}
 @if(isset($category))

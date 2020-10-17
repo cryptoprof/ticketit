@@ -8,7 +8,7 @@ class Category extends Model
 {
     protected $table = 'ticketit_categories';
 
-    protected $fillable = ['name', 'color'];
+    protected $fillable = ['name', 'color', 'is_active'];
 
     /**
      * Indicates that this model should not be timestamped.
@@ -35,5 +35,10 @@ class Category extends Model
     public function agents()
     {
         return $this->belongsToMany('\Kordy\Ticketit\Models\Agent', 'ticketit_categories_users', 'category_id', 'user_id');
+    }
+
+    //Get only active categories
+    public function scopeActive($query){
+        return $query->where('is_active','=',1);
     }
 }

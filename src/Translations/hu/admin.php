@@ -104,6 +104,7 @@ return [
   'priority-create-title'         => 'Prioritás létrehozása',
   'priority-create-name'          => 'Név',
   'priority-create-color'         => 'Szín',
+  'category-create-is_active'     => 'Active category',
   'priority-edit-title'           => 'Prioritás szerkesztése: :name',
 // tickets-admin/status/____
   'status-index-title'            => 'Státuszok kezelése',
