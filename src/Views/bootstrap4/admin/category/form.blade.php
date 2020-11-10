@@ -8,7 +8,7 @@
 </div>
 <div class="form-group">
     {!! CollectiveForm::label('is_active', trans('ticketit::admin.category-create-is_active') . trans('ticketit::admin.colon'), ['class' => '']) !!}
-    {!! CollectiveForm::checkbox('is_active', 1, false) !!}
+    {!! CollectiveForm::checkbox('is_active', 1, isset($category->is_active)? $category->is_active : false) !!}
 </div>
 
 {!! link_to_route($setting->grab('admin_route').'.category.index', trans('ticketit::admin.btn-back'), null, ['class' => 'btn btn-link']) !!}

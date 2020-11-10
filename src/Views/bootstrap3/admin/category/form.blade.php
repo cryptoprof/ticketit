@@ -11,10 +11,12 @@
     </div>
 </div>
 <div class="form-group">
-    {!! CollectiveForm::label('is_active', trans('ticketit::admin.category-create-is_active') . trans('ticketit::admin.colon'), ['class' => '']) !!}
+
+    {!! CollectiveForm::label('is_active', trans('ticketit::admin.category-create-is_active') . trans('ticketit::admin.colon'), ['class' => 'col-lg-2 control-label']) !!}
     <div class="col-lg-10">
-        {!! CollectiveForm::checkbox('is_active', 1, false) !!}
+        {!! CollectiveForm::checkbox('is_active', 1,isset($category->is_active)? $category->is_active : false) !!}
     </div>
+
 </div>
 <div class="form-group">
     <div class="col-lg-10 col-lg-offset-2">
